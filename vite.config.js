@@ -8,7 +8,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './variable.js';
 
 export default defineConfig({
-    base: "/",
+    base: "/ahdesa-proyect/",
     appType: 'mpa',
     build: {
         rollupOptions: {
