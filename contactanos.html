@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="less/style.less">
+    <script src="contactanos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    {{>header}}
+
+    <section class="formulario">
+        <section class="contacto">
+            <section class="t-p-container">
+                <div class="title">
+                    <h1>Contáctenos</h1>
+                </div>
+                <div class="content">
+                    <p>Si tienes consultas, deseas contactar con un maestro fogonero, o si estás interesado en realizar un
+                        proyecto con nosotros, ¡no dudes en ponerte en contacto!</p>
+                </div>
+            </section>
+        
+            <section class="contact-form">
+                <div class="formulario">
+                    <form action="contactanos.html" method="get" id="formulario">
+                        <label for="txtNombre">Nombre</label>
+                        <input type="text" name="txtNombre" id="txtNombre" />
+                        <label for="txtApellido">Apellido</label>
+                        <input type="text" name="txtApellido" id="txtApellido" />
+                        <label for="txtnumero">Numero de teléfono</label>
+                        <input type="text" name="txtnuemro" id="txtnumero">
+                        <label for="txtEmail">Email</label>
+                        <input type="email" name="txtEmail" id="txtEmail" />
+                        <label for="txtMensaje">Mensaje</label>
+                        <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10"
+                            placeholder="Escriba aqui sus comentarios..."></textarea>
+                        <button type="submit" name="btnEnviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <div class="imgForm">
+            <img src="/img/guaraIMG.png" alt="imagen al lado del form">
+        </div>
+    </section>
+
+        
+
+    {{>footer}}
+</body>
+
+</html>

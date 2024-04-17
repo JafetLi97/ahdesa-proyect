@@ -1,0 +1,185 @@
+.aliados {
+    h2{
+    text-align: center;
+    font-size: 1.5rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+
+        .grid-item {
+            width: 100%;
+            margin-bottom: 1%;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 5%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.container_socios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    .card_socios {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+
+        h2 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            text-align: center;
+            font-size: 1.5rem;
+            
+        }
+
+        p {
+            text-align: justify;
+            max-width: 100%;
+            margin-top: 2%;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.NSocios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 100%;
+
+    h2 {
+        color: green;
+        align-items: center;
+        font-size: 2rem;
+        order: 0;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        order: 2;
+
+        @media (min-width: @display_breaks[lg]) {
+            text-align: left;
+            margin-right: 5%;
+        }
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+        order: 1;
+
+        @media (min-width: @display_breaks[lg]) {
+            width: 100%;
+        }
+    }
+}
+
+.Titulo {
+    text-align: center;
+    color: @negro;
+    font-size: 1.5rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+@media (min-width: @display_breaks[md]) {
+    .aliados {
+        text-align: center;
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .grid-item {
+                width: 50%;
+
+                img {
+                    width: 80%;
+                    height: 90%;
+                    display: block;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .container_socios .card_socios {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: @display_breaks[lg]) {
+    .aliados {
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+            gap: 10px;
+            .grid-item {
+                width: 30%;
+                img {
+                    width: 100%;
+                    height: 90%;
+                    width: 280px;
+                    display: block;
+                    border-radius: 8px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .container_socios {
+        .card_socios {
+            width: calc(50% - 20px);
+        }
+    }
+
+    .NSocios{
+        display: flex;
+        flex-direction: row;
+
+        .texto{
+
+            width: 50%;
+            h2{
+                text-align: left;
+            }
+        }
+        
+        img{
+            width: 50%;
+        }
+
+
+
+    }
+
+}

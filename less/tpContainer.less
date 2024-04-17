@@ -1,0 +1,87 @@
+.formulario{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: space-between;
+
+    .contacto{
+        width: 100%;
+
+        @media (min-width: @display_breaks[md]) {   
+            width: 50%;
+        }
+    }
+
+    .imgForm{
+        width: 100%;
+        @media (min-width: @display_breaks[md]) {   
+            margin: auto;
+            width: 40%;
+        }
+
+        img{
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    @media (min-width: @display_breaks[md]) {
+        display: flex;
+        flex-direction: row;
+
+    }  
+
+    @media (min-width: @display_breaks[lg]) {
+    
+    }  
+}
+
+
+
+.t-p-container {
+    .title{
+        margin-top: 1.5rem;
+        text-align: center;
+
+        @media (min-width: @display_breaks[md]) {
+            text-align: left;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: inherit;
+            padding: 1px;
+            @media (min-width: 768px) {
+                font-size: 2.3rem;
+            }
+            @media (min-width: 1024px) {
+                font-size: 3rem;
+            }
+            @media (min-width: 1440px) {
+                font-size: 3.8rem;
+            }
+        }
+    }
+    .content{
+        p{
+            font-size: 1.3rem;
+            padding: 1px;
+            align-items: center;
+            
+            @media (min-width: 768px) {
+                font-size: 1.3rem;
+                max-width: 35rem;
+            }
+            @media (min-width: 1024px) {
+                font-size: 1.6rem;
+            }
+            @media (min-width: 1440px) {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

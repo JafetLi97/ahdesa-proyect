@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red de Maestros y Maestras Fogoneras de Honduras</title>
+  <link rel="stylesheet" href="less/style.less">
+</head>
+
+<body>
+  {{> header}}
+  <section class="hero">
+    <picture>
+      <source srcset="/img/headerMaestros.jpg" media="(min-width: 1024px)">
+      <source srcset="/img/headerMaestros.jpg" media="(min-width: 720px)">
+      <img src="/img/headerMaestros.jpg" alt="hero">
+    </picture>
+    <h1>Red de Maestros y Maestras Fogoneras de Honduras</h1>
+  </section>
+
+
+  <br>
+
+  {{> maestros}}
+
+
+  <br><br><br><br>
+
+
+  {{> footer}}
+</body>
+
+</html>

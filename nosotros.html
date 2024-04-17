@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="less/style.less">
+  </head>
+
+  <body>
+    {{> header}}
+
+    <section class="hero">
+      <picture>
+          <source srcset="/img/heroNosotros.jpg" media="(min-width: 1024px)">
+          <source srcset="/img/heroNosotros.jpg" media="(min-width: 720px)">
+          <img src="/img/heroNosotros.jpg" alt="bakery">
+      </picture>
+      <h1>NOSOTROS</h1>
+    </section>
+
+    <section class="sobre_nosotros">
+        <div class="nosotros_izquierda">
+          <div class="text">
+            <h1>Sobre Nosotros</h1>
+            <p>La Asociación Hondureña para el Desarrollo (AHDESA) es una organización con más 
+                de 30 años de servicio a las comunidades más pobres de Honduras.
+            </p>
+          </div>
+            <img src="public/img/quienes_somos.jpg">
+        </div>
+        <div class="nosotros_derecha">
+            <img src="public/img/LogoHorizontal.png">
+            <p>Fundada el 5 de diciembre de 1992 en Tegucigalpa por el agrónimo Ignacio Osorto
+                Núñez, AHDESA es una ONG sin fines de lucro, con personería jurídica, que promueve
+                la formación para el mejoramiento social, ecónomico y ambiental de Honduras.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+  <div class="titulo">
+    <h1>Nuestros Valores</h1>
+  </div>
+
+  <section class="valores">
+    <div class="tarjeta_valor">
+      <div class="icono">
+        <img src="/img/solidaridad.png">
+      </div>
+      <div class="texto">
+        <h3>Solidaridad</h3>
+        <p>Colaborando junto a las comunidades en mejorar su calidad de vida y ante circunstancias adversas.</p>
+      </div>
+    </div>
+    <div class="tarjeta_valor">
+      <div class="icono">
+        <img src="/img/igualdad.png">
+      </div>
+      <div class="texto">
+        <h3>Igualdad</h3>
+        <p>Tratando a todas las personas por igual sin diferenciar género, etnicidad, religión, posición social o política</p>
+      </div>
+    </div>
+    <div class="tarjeta_valor">
+      <div class="icono">
+        <img src="/img/integridad.png">
+      </div>
+      <div class="texto">
+        <h3>Integridad</h3>
+        <p>Actuando con la verdad y transparencia, honrando compromisos y alianzas con las comunidades y nuestros socios.</p>
+      </div>
+  </section>
+
+  <div class="titulo">
+    <h1 style="text-align: center;">Socios y Aliados</h1>
+  </div>
+
+  <section class="socios-aliados">
+    <div class="socio_principal">
+      <img src="public/img/socio_principal.jpg">
+      <h5>Trees, Water & People</h5>
+    </div>
+
+    <hr>
+
+    <div class="resto_SA">
+      <div class="SA">
+        <img src="/img/aliado2_recortado.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado8_recortada.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado3_recortado.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado4_recortado.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado5_recortado.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado7_recortada.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado9_recortada.png">
+      </div>
+      <div class="SA">
+        <img src="/img/aliado6_recortado.png">
+      </div>
+    </div>
+  </section>
+
+  <a href="socios.html" style="text-decoration: none;">
+    <div class="boton_grande">Conoce Más</div>
+  </a>
+
+  <section class="HVM">
+    <div class="tarjeta_HVM">
+      <div class="imagen_HVM">
+        <img src="/img/historia.jpg">
+      </div>
+      <div class="texto_HVM">
+        <h3>Historia</h3>
+        <p>AHDESA fue fundada en 1992 por el agrónomo Ignacio Osorto, ante la necesidad de buscar alternativas a la creciente y desmesurada tala de bosques que acontecía en los 90, 
+          se inició en la búsqueda de tecnologías para economizar el uso de leña en la cocina ejecutando programas y proyectos principalmente para el desarrollo y promoción de modelos de estufas mejoradas.</p>
+      </div>
+    </div>
+    <div class="tarjeta_HVM" style="background-color: #5E6F41; color: #fff;">
+      <div class="imagen_HVM">
+        <img src="/img/vision.jpg">
+      </div>
+      <div class="texto_HVM">
+        <h3>Visión</h3>
+        <p>Aspiramos a ser una organización fuerte, consolidada, prestando servicio social y técnico que
+          permitan elevar el índice de desarrollo humano mediante soluciones integrales a los retos de desarrollo de la población Hondureña.</p>
+      </div>
+    </div>
+    <div class="tarjeta_HVM">
+      <div class="imagen_HVM">
+        <img src="public/img/mision.jpg">
+      </div>
+      <div class="texto_HVM">
+        <h3>Misión</h3>
+        <p>Somos una organización social sin fines de lucro, que busca contribuir a la formación integral del recurso humano, especialmente de la población más necesitada del país, mediante capacitación, asesoría técnica y ejecución de proyectos socioeconómicos, 
+          medio ambientales y de agricultura sostenible que estimulen y promuevan el desarrollo de las comunidades bajo una concepción humanista y participativa del hombre y la mujer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="estufas">
+      <h1>MÁS DE 20 AÑOS EN LA INVESTIGACIÓN Y PROMOCIÓN DE LAS ESTUFAS MEJORADAS</h1>
+    <div class="contenido_estufas">
+      <div class="imagen_estufas">
+        <img src="public/img/estufas_mejoradas.jpg">
+      </div>
+      <div class="texto_estufas">
+        <p>Somos los principales investigadores y promotores de tecnologías apropiadas para cocción con leña como ser la estufa o ecofogon Justa en todas sus variables (Justa 22×22, Justa 16 x24 y nuestro modelo de última generación categoría A, Justa 3D).
+          Además de nuestra amplia experiencia en cocción limpia, hemos desarrollado variedad de proyectos sociales, ambientales con apoyo nacional e internacional a lo largo de nuestra existencia.</p>
+      </div>
+    </div>
+    <a href="maestros.html" style="text-decoration: none;">
+      <div class="boton_grande" style="color: #5E6F41; background-color: #fff;">CONOCE MÁS</div>
+    </a>
+  </section>
+
+  {{> footer}}
+  </body>
+
+  
+
+    
+

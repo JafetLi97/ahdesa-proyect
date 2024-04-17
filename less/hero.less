@@ -1,0 +1,86 @@
+.hero {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 2.5%;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+
+        @media (min-width: @display_breaks[md]) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    picture{
+        align-self: left;
+        max-width: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    
+            @media (min-width: @display_breaks[md]) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media (min-width: @display_breaks[md]) {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        width: 100%;
+        color: #fff;
+        background-color: #000;
+    }
+
+}
+
+@media (min-width: @display_breaks[md]) {
+    .hero {
+        height: 500px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    
+    }
+}
+

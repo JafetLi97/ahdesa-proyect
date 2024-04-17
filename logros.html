@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logros</title>
+    <link rel="stylesheet" href="less/style.less">
+  </head>
+
+  <body>
+    {{> header}}
+    <section class="hero">
+        <picture>
+            <source srcset="/img/logrosHeader.jpg" media="(min-width: 1024px)">
+            <source srcset="/img/logrosHeader.jpg" media="(min-width: 720px)">
+            <img src="/img/logrosHeader.jpg" alt="hero">
+        </picture>
+        <h1>Logros</h1>
+    </section>
+
+
+    <br><br>
+    
+    {{> logros}}
+
+
+    <br><br>
+    
+
+    {{> footer}}
+  </body>
+</html>

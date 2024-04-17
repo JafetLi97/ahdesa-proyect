@@ -1,0 +1,438 @@
+.titulo{
+    text-align: center;
+    padding-left: 3%;
+    margin-top: 10%;
+
+    @media (min-width: @display_breaks[md]) {
+        margin-top: 5%;
+    }
+
+    @media (min-width: @display_breaks[lg]) {
+        text-align: left;
+    }
+
+}
+
+hr{
+    width: 94%;
+    height: 3px;
+    background-color: #333;
+    color:#333
+}
+
+.sobre_nosotros{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    text-align: center;
+
+    @media (min-width: @display_breaks[md]) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    @media (min-width: @display_breaks[lg]) {
+        height: 500px;
+        margin-top: 2.5%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .nosotros_izquierda, .nosotros_derecha{
+
+        margin-bottom: 5%;
+
+        @media (min-width: @display_breaks[md]) {
+            width: 46%;
+            margin: 1.5%;
+            font-size: 24px;
+        }
+
+        @media (min-width: @display_breaks[lg]) {
+            width: 100%;
+        }
+
+        h1{
+            font-size: 34px;
+        }
+    }
+    
+    .nosotros_izquierda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .text{
+            height: 50%;
+            h1{
+                margin-bottom: 0%;
+                @media (min-width: @display_breaks[md]) {
+                    margin: 0%;
+                }
+            }
+
+        }
+
+
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 50%;
+            border-radius: 2.5%;
+        }
+
+    }
+
+    .nosotros_derecha{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img{
+            order: 1;
+            border-radius: 2.5%;
+            @media (min-width: @display_breaks[md]) {
+                order: 0;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+            }
+        }
+
+        p{
+            order: 0;
+            height: 50%;
+            @media (min-width: @display_breaks[md]) {
+                order: 1;
+            }
+        }
+    }
+}
+
+.valores {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5%;
+
+    @media (min-width: @display_breaks[md]) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tarjeta_valor {
+        background-color: #5E6F41;
+        width: 90%;
+        margin: 2.5% auto;
+        box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.4);
+        border-radius: 2%;
+        border: 2px solid white;
+
+        @media (min-width: @display_breaks[md]) {
+            width: 40%;
+            margin: 2.5%;
+        }
+
+        @media (min-width: @display_breaks[lg]) {
+            width: 25%;
+        }
+
+        .icono {
+            height: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        .texto {
+            text-align: center;
+            color: #fff;
+            border-top: 2px solid white;
+            padding: 10px;
+            height: 50%;
+            margin: auto;
+
+            h3 {
+                font-weight: 500;
+                font-size: 20px;
+
+                @media (min-width: @display_breaks[md]) {
+                    font-size: 22px;
+                }
+
+                @media (min-width: @display_breaks[lg]) {
+                    font-size: 26px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+
+                @media (min-width: @display_breaks[md]) {
+                    font-size: 18px;
+                }
+
+                @media (min-width: @display_breaks[lg]) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+.socios-aliados{
+    margin-top: 5%;
+    max-width: 100%;
+
+    .socio_principal{
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        @media (min-width: @display_breaks[md]) {
+            width: 60%;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 0px;
+
+            @media (min-width: @display_breaks[lg]) {
+                width: 390px;
+                height: 181px;
+            }
+        }
+
+        h5{
+            margin-top: 5%;
+            font-size: 24px;
+
+            @media (min-width: @display_breaks[md]) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .resto_SA{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+
+        @media (min-width: @display_breaks[md]) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 70%;
+        }
+
+        @media (min-width: @display_breaks[lg]) {
+            width: 80%;
+        }
+
+        .SA{
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+
+            img{
+                border-radius: 800px;
+                width: 240px;
+                height: 181px;
+
+                @media (min-width: @display_breaks[lg]) {
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+
+.HVM{
+    max-width: 100%;
+    margin-top: 40%;
+
+    @media (min-width: @display_breaks[md]) {
+        margin-top: 20%;
+    }
+
+    .tarjeta_HVM{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @media (min-width: @display_breaks[md]) {
+            flex-direction: row;
+        }
+
+        img, h3, p{
+            width: 90%;
+            margin: auto;
+        }
+
+        .imagen_HVM{
+            width: 100%;
+
+            @media (min-width: @display_breaks[md]) {
+                width: 40%;
+            }
+
+            img{
+                margin-top: 10%;
+                border-radius: 2.5%;
+
+                @media (min-width: @display_breaks[md]) {
+                    margin-bottom: 10%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        .texto_HVM{
+            width: 100%;
+
+            @media (min-width: @display_breaks[md]) {
+                width: 60%;
+            }
+
+
+            @media (min-width: @display_breaks[md]) {
+                
+            }
+
+            h3{
+                margin-top: 5%;
+
+                
+                @media (min-width: @display_breaks[md]) {
+                    text-align: left;
+                    margin-top: 6%;
+                }
+
+                @media (min-width: @display_breaks[lg]) {
+                    font-size: 30px;
+                }
+            }
+    
+            p{
+                margin-bottom: 10%;
+
+                @media (min-width: @display_breaks[md]) {
+                    text-align: justify;
+                    margin-right: 10%;
+                    margin-left: 5%;
+                    margin-top: 2%;
+                }
+
+                @media (min-width: @display_breaks[lg]) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+}
+
+.estufas{
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #5E6F41;
+    color: #fff;
+
+
+    h1{
+        width: 92%;
+        margin: auto;
+        margin-top: 5%;
+
+        @media (min-width: @display_breaks[md]) {
+            text-align: left;
+        }
+
+        @media (min-width: @display_breaks[lg]) {
+            font-size: 34px;
+        }
+    }
+
+    .contenido_estufas{
+
+        @media (min-width: @display_breaks[md]) {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        .imagen_estufas{
+
+            @media (min-width: @display_breaks[md]) {
+                width: 43%;
+                margin-right: 4%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+            }
+
+            @media (min-width: @display_breaks[lg]) {
+                width: 50%;
+            }
+
+            img{
+                width: 94%;
+                border-radius: 2.5%;
+                margin: auto;
+                margin-top: 2.5%;
+            }
+        }
+    
+        .texto_estufas{
+
+            width: 94%;
+            text-align: justify;
+            margin: auto;
+            margin-bottom: 5%;
+
+            @media (min-width: @display_breaks[md]) {
+                width: 43%;
+                margin-left: 4%;
+                margin-right: 3%;
+            }
+
+            @media (min-width: @display_breaks[lg]) {
+                margin: 0;
+                margin-right: 4%;
+            }
+
+            p{ 
+                
+                font-size: 16px;
+
+                @media (min-width: @display_breaks[md]) {
+                    font-size: 18px;
+                }
+
+                @media (min-width: @display_breaks[lg]) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+
+}

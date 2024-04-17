@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="less/style.less">
+  </head>
+
+  <body>
+    {{> header}}
+
+    <section class="hero">
+      <picture>
+          <source srcset="/img/heroIndex.jpg" media="(min-width: 1024px)">
+          <source srcset="/img/heroIndex.jpg" media="(min-width: 720px)">
+          <img src="/img/heroIndex.jpg" alt="bakery">
+      </picture>
+      <h1>AHDESA</h1>
+    </section> 
+    
+  <div class="nosotros">
+    <section class="texto">
+      <h1>Sobre Nosotros</h1>
+      <p>Somos una organización sin fines de lucro que busca la formación integral del recurso humano especialmente en la población mas necesitada de Honduras. Nuestro trabajo es búsqueda de alternativas de desarrollo sostenibles y amigables con el ambiente.</p>
+    </section>
+
+    <img src="/img/nosotros.jpg" alt="Nosotros">
+  </div>
+
+  <div class="titulo">
+    <h1>Noticias Recientes</h1>
+  </div>
+
+  {{> noticias_index}}
+
+  <a href="noticias.html" style="text-decoration: none;">
+    <button class="boton_grande">Conocer Más</button>
+  </a>
+
+
+  <div class="conocer">
+    <div class="contenido">
+        <h1>Proyecto Red de Maestros y Maestras Fogoneros de Honduras</h1>
+        <p>Proyecto AHDESA que capacita recurso humano para la construcción de estufas mejoradas y al vez genera valiosas oportunidades de empleo</p>
+        <a href="maestros.html" style="text-decoration: none;">
+          <button class="boton_small">Conoce Más</button>
+        </a>
+    </div>
+  </div>
+
+  <div class="titulo">
+    <h1>Nuestros Proyectos</h1>
+  </div>
+
+  <section class="proyectos_index">
+    <div class="proyecto_principal_index">
+      <img src="/img/proyecto1.jpg" alt="Proyecto">
+      <h2>Proyecto de Reforestación</h2>
+    </div>
+    <div class="proyectos_extra_index">
+      <img src="/img/proyecto2.jpg" alt="Proyecto">
+      <h2>Programa de Estufas Justa</h2>
+      <img src="/img/proyecto3.jpg" alt="Proyecto">
+      <h2>Hornos “Manny” para cerámica artesanal</h2>
+    </div>
+  </section>
+  
+  <a href="proyectos.html" style="text-decoration: none;">
+    <button class="boton_grande">Conoce Más</button>
+  </a>
+
+  <div class="conocer2">
+    <div class="contenido">
+        <h1>Amas de Casa Saludables</h1>
+        <p>Estudios demuestran que amas de casa usuarias de la estufa Justa, reducen riesgo
+          de sufrir enfermedades crónicas con la no ingesta de humo en la cocina.
+        </p>
+        <a href="iniciativa.html" style="text-decoration: none;">
+          <button class="boton_small">Conoce Más</button>
+        </a>
+    </div>
+  </div>
+
+  <div class="titulo">
+    <h1>Testimonios</h1>
+  </div>
+
+  <section class="tarjetas_testimonios">
+    <div class="item-testimonio">
+      <img src="/img/testimonio1.jpg" alt="testimonio">
+      <h3>Testimonio de Maestra Fogonera, Melisa Núñez</h3>
+    </div>
+    <div class="item-testimonio">
+      <img src="/img/testimonio2.jpg" alt="testimonio">
+      <h3>Testimonio de Estufa Justa, Dilcia Martínez</h3>
+    </div>
+  </section>
+
+  <a href="testimonios.html" style="text-decoration: none;">
+    <button class="boton_grande">Conoce Más</button>
+  </a>
+
+  <div class="titulo">
+    <h1>Logros</h1>
+  </div>
+
+  {{> logros_index}}
+
+  <a href="logros.html" style="text-decoration: none;">
+    <button class="boton_grande">Conoce Más</button>
+  </a>
+
+    {{> footer}}
+  </body>
+</html>

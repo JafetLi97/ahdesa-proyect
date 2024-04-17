@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@texto-footer: #28361B; 
+@color-linea: #5E6F41;
+@blanco: #fff;
+@linea-header: #e5e5e5;
+@negro: #000;
+@gris: #333;
+
+@display_breaks:{
+    md: 720px;
+    lg: 1024px;
+}
+
+@import "footer.less";
+@import "header.less";
+@import "hero.less";
+@import "tarjetas.less";    
+@import "principal.less";
+@import "socYali.less";
+@import "noticias.less";
+@import "nosotros.less";
+@import "tpContainer.less";
+@import "form.less";
+@import "principal.less";
+@import "logros.less";
+@import "maestros.less";
+@import "iniciativa.less";
+@import "testimonios.less";
+@import "proyectos.less";
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    min-height: 100%; 
+    background-color: @blanco;
+    height: 100%;
+    color: @negro;
+    min-width: 320px;
+}
+
+.boton_grande{
+    background-color: #5E6F41;
+    border: none;
+    color: white; 
+    padding: 8px 10px;
+    border-radius: 10px; 
+    width: 94%;
+    height: auto; 
+    display: block;
+    box-sizing: border-box;
+    text-align: center; 
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 2.5%;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none   ;
+
+    @media (min-width: @display_breaks[md]) {
+        padding: 10px 15px; 
+        font-size: 18px;
+    } 
+
+    @media (min-width: @display_breaks[lg]) {
+        padding: 15px 20px; 
+        font-size: 24px;
+    } 
+}

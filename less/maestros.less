@@ -1,0 +1,308 @@
+.cuerpo {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .title {
+        text-align: center;
+        margin-bottom: 3rem;
+        border-top: 1px solid @color-linea;
+        border-bottom: 1px solid @color-linea;
+        font-weight: bold;
+        color: @color-linea;
+    }
+
+    .texto_superior {
+        text-align: center;
+    }
+
+    .tarjetas_contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+
+
+        .tarjeta {
+            display: inline-block;
+            box-shadow: 3px 3px 5px @gris;
+            margin: 0.5rem;
+            border-radius: 8px;
+            text-align: center;
+
+
+            @media (min-width: @display_breaks[md]) {
+                width: 240px;
+                height: 360px;
+            }
+
+
+            .imagen_tarjeta {
+                margin: 2.5%;
+                padding: 10px;
+
+                @media (min-width: @display_breaks[md]) {
+                    margin: 5%;
+                    padding: 5px;
+                }
+
+                @media (min-width: @display_breaks[md]) {
+                    margin: 7.5%;
+                }
+
+
+                img {
+                    width: 100px;
+                    height: auto;
+                    border-radius: 8px 8px 0px 0px;
+
+
+                }
+            }
+
+
+            h2,
+            p {
+                padding-right: 0.7rem;
+                padding-left: 0.7rem;
+            }
+
+            h2{
+                @media (min-width: @display_breaks[md]) {
+                    font-size: 20px;
+                }
+            }
+
+            p{
+                @media (min-width: @display_breaks[md]) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+
+    .sobre_red,
+    .tarjes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid @color-linea;
+        margin-top: 2rem;
+    }
+
+
+
+    .sobre_red .tarjes {
+        border-top: none;
+        margin-top: 0;
+
+
+        .titulo {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+
+
+        .tarjeta_sobre_derecha {
+            border: 0.1rem solid @color-linea;
+
+            @media(min-width: @display_breaks[md]) {
+                display: flex;
+                border: none;
+                margin-bottom: 0.9rem;
+                max-width: 100%;
+                justify-content: space-between;
+            }
+
+
+            h2 {
+                color: @color-linea;
+                text-align: center;
+                margin-top: 0.5rem;
+
+                @media(min-width: @display_breaks[md]) {
+                    text-align: left;
+                }
+
+            }
+
+
+            .imagen_tarjeta {
+
+                @media(min-width: @display_breaks[md]) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media(min-width: @display_breaks[lg]) {
+                    margin: 0;
+                }
+
+                img {
+                    margin-bottom: 0.5rem;
+
+                    @media(min-width: @display_breaks[md]) {
+                        width: 300px;
+                        height: 240px;
+                        border-radius: 8px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                    }
+
+                    @media(min-width: @display_breaks[lg]) {
+                        width: 300px;
+                        height: 150px;
+                        border-radius: 8px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+        }
+
+
+
+        .tarjeta_sobre_iz {
+            display: flex;
+            flex-direction: column;
+            background-color: @color-linea;
+            color: @linea-header;
+            height: 591px;
+            align-items: center;
+            justify-content: center;
+
+            @media(min-width: @display_breaks[md]) {
+                display: flex;
+                flex-direction: row-reverse;
+                max-width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
+            }
+
+            .imagen_tarjeta {
+                order: 2;
+
+                img {
+                    margin-top: 0.5rem;
+
+                    @media(min-width: @display_breaks[md]) {
+                        width: 300px;
+                        height: 240px;
+                        border-radius: 8px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                    }
+
+                    @media(min-width: @display_breaks[lg]) {
+                        width: 300px;
+                        height: 170px;
+                    }
+                }
+            }
+
+
+            .texto {
+                order: 1;
+                padding: 0.7rem;
+                text-align: center;
+
+                @media(min-width: @display_breaks[lg]) {
+                    margin: 0;
+                }
+
+                h2 {
+                    margin-top: 1.5rem;
+
+                    @media(min-width: @display_breaks[md]) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .tarjeta_sobre_derecha,
+    .tarjeta_sobre_iz {
+        padding: 0.7rem;
+        margin: 0.5rem;
+        border-radius: 8px;
+        margin-bottom: 0.9rem;
+        max-width: 316px;
+        text-align: center;
+
+        p {
+            text-align: center;
+
+            @media(min-width: @display_breaks[md]) {
+                text-align: left;
+            }
+        }
+
+        h2 {
+            @media(min-width: @display_breaks[md]) {
+                text-align: left;
+            }
+        }
+
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+
+    .boton {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+
+        button {
+            background-color: @color-linea;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: @blanco;
+            border: none;
+            font-weight: bold;
+            width: 316px;
+            height: auto;
+            font-size: 15px;
+
+            @media(min-width: @display_breaks[md]) {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .tarjes,
+    button {
+        @media(min-width: @display_breaks[md]) {
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media(min-width: @display_breaks[lg]) {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
